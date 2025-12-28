@@ -100,6 +100,9 @@
 }
 
 .hero-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #17181f;
   border: 1px solid #fff;
   border-radius: 4px;

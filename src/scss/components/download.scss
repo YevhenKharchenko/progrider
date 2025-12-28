@@ -1,0 +1,108 @@
+.download-section {
+}
+
+.download-bg-wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    max-width: 1440px;
+  }
+}
+
+.download-content-wrapper {
+  padding: 60px 16px;
+  background-image: url(../img/download/download-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  @include media(desktop) {
+    background-image: url(../img/download/download-bg-desk.png);
+  }
+}
+
+.download-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  color: #ebebeb;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    font-size: 22px;
+  }
+}
+
+.download-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #ebebeb;
+  margin-bottom: 32px;
+
+  @include media(desktop) {
+    font-size: 18px;
+    max-width: 384px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.download-btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+  }
+}
+
+.download-google-btn {
+  max-width: 311px;
+  margin: 0;
+
+  @include media(desktop) {
+    max-width: 240px;
+  }
+}
+
+.download-apple-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 7px 9px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.4;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  max-width: 311px;
+
+  @include media(desktop) {
+    max-width: 240px;
+  }
+}
+
+.download-apple-btn-span {
+  max-width: 161px;
+}
