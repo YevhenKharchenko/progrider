@@ -1,0 +1,141 @@
+.faq-section {
+}
+
+.faq-title {
+  @include media(desktop) {
+  }
+}
+
+.faq-bg-wrapper {
+  padding-top: 24px;
+  padding-bottom: 288px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/faq/faq-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: auto;
+
+  @include media(desktop) {
+    padding-top: 48px;
+    padding-bottom: 924px;
+    max-width: 1440px;
+    background-image: url(../img/faq/faq-bg-desk.jpg);
+  }
+}
+
+.faq-container {
+  @include media(desktop) {
+  }
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.faq-list-item {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+
+  @include media(desktop) {
+    max-width: 894px;
+  }
+}
+
+.faq-item-question-wrapper {
+  padding: 12px 24px;
+
+  @include media(desktop) {
+  }
+}
+
+.faq-item-answer-wrapper {
+  padding-left: 24px;
+  padding-right: 24px;
+  max-height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out,
+    padding 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.faq-top-text-btn {
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to right, #ffe16d, #291b5c) 1;
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  width: 100%;
+
+  @include media(desktop) {
+    padding: 11px 0;
+  }
+}
+
+.faq-toggle-symbol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.faq-icon {
+}
+
+.faq-btn-text {
+  font-family: 'Luckiest Guy', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  color: #fffef6;
+  text-align: left;
+
+  @include media(desktop) {
+  }
+}
+
+.faq-bottom-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fffef6;
+
+  @include media(desktop) {
+  }
+}
+
+.is-visible {
+  max-height: 500px;
+  opacity: 1;
+
+  @include media(desktop) {
+    max-height: 100px;
+  }
+}
+
+.faq-list-item.faq-open .faq-toggle-symbol {
+  transform: rotate(180deg);
+}
+
+.faq-list-item.faq-open .faq-item-answer-wrapper {
+  padding-top: 4px;
+  padding-bottom: 12px;
+  opacity: 1;
+  max-height: 500px;
+
+  @include media(desktop) {
+    padding-top: 5px;
+    padding-bottom: 12px;
+  }
+}

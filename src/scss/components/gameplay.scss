@@ -1,0 +1,109 @@
+.gameplay-section {
+}
+
+.gameplay-bg-wrapper {
+  background: linear-gradient(180deg, #291b5c 26.85%, #573eb1 100%);
+  padding-top: 24px;
+  padding-bottom: 40px;
+
+  @include media(desktop) {
+    padding-top: 24px;
+    padding-bottom: 56px;
+  }
+}
+
+.gameplay-title {
+  max-width: 149px;
+
+  @include media(desktop) {
+    max-width: max-content;
+  }
+}
+
+.gameplay-container {
+}
+
+.gameplay-content-wrapper {
+  @include media(desktop) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 81px;
+  }
+}
+
+.gameplay-text-wrapper {
+  margin-bottom: 32px;
+
+  @include media(desktop) {
+    max-width: 628px;
+    margin-bottom: 0;
+  }
+}
+
+.gameplay-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fffef6;
+  max-width: 323px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    font-size: 20px;
+    text-align: left;
+    max-width: max-content;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 56px;
+  }
+}
+
+.gameplay-list {
+  display: flex;
+  flex-direction: column;
+  max-width: 323px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 16px;
+
+  @include media(desktop) {
+    max-width: max-content;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.gameplay-list-item {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  @include media(desktop) {
+  }
+}
+
+.gameplay-item-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #fffef6;
+
+  @include media(desktop) {
+    font-size: 14px;
+  }
+}
+
+.gameplay-img {
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+  }
+}

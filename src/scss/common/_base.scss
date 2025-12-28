@@ -1,0 +1,81 @@
+:root {
+  font-family: 'Inter', sans-serif;
+  color: $_main_color;
+  background: $_main_bg_color;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.container {
+  width: 100%;
+  max-width: 375px;
+  padding-right: 16px;
+  padding-left: 16px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    max-width: 1440px;
+    padding-right: 88px;
+    padding-left: 88px;
+  }
+}
+
+.section {
+  scroll-margin-top: 40px;
+
+  @include media(desktop) {
+    scroll-margin-top: 50px;
+  }
+}
+
+.section-title-wrapper {
+  background: #291b5c;
+  padding: 48px 0 24px;
+
+  @include media(desktop) {
+    padding: 56px 0 24px;
+  }
+}
+
+.section-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  padding: 0;
+}
+
+.section-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #17181f;
+
+  @include media(desktop) {
+    font-size: 42px;
+  }
+}

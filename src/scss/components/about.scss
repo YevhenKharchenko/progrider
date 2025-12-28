@@ -1,0 +1,67 @@
+.about-section {
+}
+
+.about-bg-wrapper {
+  padding-top: 24px;
+  padding-bottom: 430px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/about/about-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: auto;
+
+  @include media(desktop) {
+    padding-top: 120px;
+    padding-bottom: 334px;
+    max-width: 1440px;
+    background-image: url(../img/about/about-bg-desk.jpg);
+    background-size: cover;
+  }
+}
+
+.about-container {
+}
+
+.about-title-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.about-title {
+  @include media(desktop) {
+  }
+}
+
+.about-subtitle {
+  @include media(desktop) {
+    color: #170f36;
+    text-align: left;
+    margin-bottom: 56px;
+  }
+}
+
+.about-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  text-align: center;
+  color: #fffef6;
+
+  @include media(desktop) {
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #170f36;
+    max-width: 737px;
+  }
+}
+
+.about-bottom-text {
+  margin-top: 1em;
+
+  @include media(desktop) {
+  }
+}

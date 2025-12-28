@@ -1,0 +1,133 @@
+.screenshots-section {
+  @include media(desktop) {
+  }
+}
+
+.screenshots-bg-wrapper {
+  padding-top: 24px;
+  padding-bottom: 48px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  position: relative;
+
+  @include media(desktop) {
+    padding-top: 24px;
+    padding-bottom: 56px;
+    max-width: 1440px;
+  }
+}
+
+.screenshots-container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.screenshots-title {
+}
+
+.screenshots-swiper-container {
+  max-width: 323px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    max-width: 1440px;
+  }
+}
+
+.screenshots-swiper-container.show {
+  visibility: visible;
+}
+
+.screenshots-swiper-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.screenshots-slide {
+  max-width: 323px;
+
+  @include media(desktop) {
+  }
+}
+
+.controls {
+  display: none;
+
+  @include media(desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1280px;
+    gap: 18px;
+    position: absolute;
+    top: 274px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+  }
+}
+
+.arrow-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+
+  &:active {
+    transform: scale(0.9);
+  }
+
+  @include media(desktop) {
+    &:hover {
+      transform: scale(1.1);
+
+      .arrow-icon {
+        fill: #170f36;
+      }
+    }
+  }
+
+  &[disabled] {
+    cursor: not-allowed;
+    opacity: 0.5;
+
+    &:hover {
+      transform: none;
+    }
+  }
+}
+
+.arrow-icon {
+  fill: #291b5c;
+  transition: fill 0.3 ease-in-out;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 24px;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.screenshots-dot {
+  background: #fffef6;
+  border-radius: 8px;
+  width: 16px;
+  height: 8px;
+  transition: background 0.3s ease-in-out, width 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.screenshots-dot.active {
+  background: #ffe16d;
+  width: 48px;
+}

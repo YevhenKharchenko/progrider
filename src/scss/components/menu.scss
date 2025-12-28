@@ -1,0 +1,90 @@
+.context-menu {
+  display: none;
+  background: linear-gradient(180deg, #291b5c 26.85%, #573eb1 100%);
+  border-radius: 0 0 40px 40px;
+  padding: 40px 28px 54px;
+  max-width: 375px;
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  top: 48px;
+  left: 0;
+  right: 0;
+  transform: none;
+  z-index: 10;
+}
+
+.context-nav {
+  width: 100%;
+}
+
+.context-nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.context-list-item {
+  width: 100%;
+  max-width: 170px;
+}
+
+.context-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fffef6;
+  transition: border 0.3s ease-in-out;
+
+  &:active {
+    border-bottom: 1px solid #fffef6;
+  }
+}
+
+.context-privacy-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.context-privacy-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-align: center;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.is-open {
+  display: flex;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.closed {
+  display: none;
+}
+
+.screen-freeze {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
