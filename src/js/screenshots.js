@@ -14,15 +14,16 @@ screenshotsSwiper = new Swiper('.screenshots-swiper-container', {
   slidesPerView: 1,
   slidesPerGroup: 1,
   initialSlide: 0,
-  spaceBetween: 12,
+  spaceBetween: 20,
   speed: 500,
   allowTouchMove: true,
   grabCursor: true,
   breakpoints: {
     1440: {
-      slidesPerView: 'auto',
-      initialSlide: 2,
-      spaceBetween: 24,
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 32,
+      centeredSlides: false,
     },
   },
 

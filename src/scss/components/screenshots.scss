@@ -4,36 +4,39 @@
 }
 
 .screenshots-bg-wrapper {
-  padding-top: 24px;
-  padding-bottom: 48px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
-  position: relative;
+  background-image: url(../img/screenshots/screenshots-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
 
   @include media(desktop) {
-    padding-top: 24px;
-    padding-bottom: 56px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     max-width: 1440px;
+    background-image: url(../img/screenshots/screenshots-bg-desk.jpg);
   }
 }
 
 .screenshots-container {
-  padding-left: 0;
-  padding-right: 0;
 }
 
 .screenshots-title {
 }
 
 .screenshots-swiper-container {
-  max-width: 323px;
+  max-width: 343px;
   margin-left: auto;
   margin-right: auto;
 
   @include media(desktop) {
-    max-width: 1440px;
+    max-width: 1264px;
+    overflow: hidden;
   }
 }
 
@@ -47,27 +50,25 @@
 }
 
 .screenshots-slide {
-  max-width: 323px;
+  max-width: 343px;
 
   @include media(desktop) {
+    max-width: 616px;
   }
 }
 
 .controls {
-  display: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  margin-top: 24px;
 
   @include media(desktop) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    max-width: 1280px;
-    gap: 18px;
-    position: absolute;
-    top: 274px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 40px;
   }
 }
 
@@ -86,7 +87,6 @@
       transform: scale(1.1);
 
       .arrow-icon {
-        fill: #170f36;
       }
     }
   }
@@ -102,32 +102,6 @@
 }
 
 .arrow-icon {
-  fill: #291b5c;
+  fill: #fbbc23;
   transition: fill 0.3 ease-in-out;
-}
-
-.dots {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  margin-top: 24px;
-
-  @include media(desktop) {
-    display: none;
-  }
-}
-
-.screenshots-dot {
-  background: #fffef6;
-  border-radius: 8px;
-  width: 16px;
-  height: 8px;
-  transition: background 0.3s ease-in-out, width 0.3s ease-in-out;
-  cursor: pointer;
-}
-
-.screenshots-dot.active {
-  background: #ffe16d;
-  width: 48px;
 }

@@ -1,34 +1,39 @@
-.reviews-section {
+.features-section {
 }
 
-.reviews-bg-wrapper {
+.features-bg-wrapper {
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 240px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
+  background-image: url(../img/features/features-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
 
   @include media(desktop) {
     padding-top: 80px;
     padding-bottom: 80px;
     max-width: 1440px;
+    background-image: url(../img/features/features-bg-desk.png);
   }
 }
 
-.reviews-container {
+.features-container {
 }
 
-.reviews-title-wrapper {
+.features-title-wrapper {
   @include media(desktop) {
   }
 }
 
-.reviews-title {
+.features-title {
   @include media(desktop) {
   }
 }
 
-.reviews-list {
+.features-list {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,60 +42,51 @@
   @include media(desktop) {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: end;
     align-items: start;
-    gap: 32px;
   }
 }
 
-.reviews-list-item {
-  background: #fff;
+.features-list-item {
   width: 100%;
-  max-width: 343px;
-  border-radius: 4px;
-  padding: 16px;
-  display: flex;
-  gap: 24px;
+  max-width: 298px;
+  border: 2px solid #3df1ad;
+  border-radius: 2px;
+  padding: 14px;
 
   @include media(desktop) {
-    max-width: 616px;
-    // min-height: 206px;
+    padding: 14px 14px 0px 14px;
+    min-height: 206px;
   }
 }
 
-.reviews-img {
-  @include media(desktop) {
-  }
-}
-
-.reviews-item-text-wrapper {
-  @include media(desktop) {
-  }
-}
-
-.reviews-item-name {
-  background: #3df1ad;
-  padding: 4px 8px;
-  font-family: 'Inter', sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.4;
-  color: #17181f;
-  max-width: max-content;
+.features-icon {
   margin-bottom: 16px;
 
   @include media(desktop) {
-    font-size: 20px;
   }
 }
 
-.reviews-item-text {
+.features-item-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #3df1ad;
+  margin-bottom: 4px;
+
+  @include media(desktop) {
+    font-size: 22px;
+  }
+}
+
+.features-item-text {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
   letter-spacing: 0.01em;
-  color: #17181f;
+  color: #ebebeb;
 
   @include media(desktop) {
     font-size: 18px;
