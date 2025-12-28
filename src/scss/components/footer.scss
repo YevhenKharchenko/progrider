@@ -1,47 +1,33 @@
 .footer {
-  background: #291b5c;
-  padding: 48px 0;
+  background: #515257;
+  padding: 60px 0;
 
   @include media(desktop) {
-    padding: 56px 0;
   }
 }
 
 .footer-container {
 }
 
-.footer-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: max-content;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 32px;
-
-  &:hover,
-  &:focus,
-  &:active {
-  }
-
-  @include media(desktop) {
-  }
-}
-
 .footer-nav {
   margin-bottom: 32px;
 
   @include media(desktop) {
+    margin-bottom: 60px;
   }
 }
 
 .footer-list {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 16px;
 
   @include media(desktop) {
+    flex-direction: row;
+    justify-content: end;
+    gap: 60px;
   }
 }
 
@@ -49,26 +35,29 @@
 }
 
 .footer-link {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 12px;
-  text-decoration: underline;
-  text-decoration-skip-ink: none;
-  color: #fffef6;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #ebebeb;
 
   @include media(desktop) {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
 .footer-text {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 12px;
-  color: #fffef6;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
   text-align: center;
+  color: #c5c5c7;
 
   @include media(desktop) {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
